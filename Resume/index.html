@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    
+        <div class="page">
+            <div class="nav">
+                <div id="profile">
+                    <img src="../images/me.png" alt="Profile Picture">
+                    <h3>Resume <i class="fa-solid fa-user"></i></h3>
+                </div>
+                <ul>
+                    <li><a href="../Main/index.html" id="home" ><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="../Education/index.html" id="education" >Education</a></li>
+                    <li><a href="../Projects/index.html"  id="project">Projects</a></li>
+                    <li><a href="../Resume/index.html"    id="resume">Resume</a></li>
+                    <li><a href="../Interests/index.html" id="interests">Interests</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3>Really Wanna See?</h3>
+                <button id="btn" onclick="openPDF()">Click Here</button>
+            </div>
+            
+            <script>
+                const CSP = {
+                    pdf: 'CSP.pdf'
+                };
+            
+                function openPDF() {
+                    window.open(CSP.pdf, '_blank'); 
+                }
+            </script>
+
+            <div class="footer">
+                <ul>
+                    <li>
+                        <div class="title">Contact & E-mail</div>
+                        <span>+91 7903435992</span><br>
+                        <span>rabhi2461@gmail.com</span>
+                    </li>
+                    <li>
+                        <div class="title">Social Media Handles</div>
+                        <span><a href="https://www.linkedin.com/in/patriciaburns97753224/"><img src="../images/linkedIn.png" id="logo" alt=""> Linkedin</a><br></span>
+                        <span><a href="https://github.com/iiichinmay"><img src="../images/git.jpg" id="logo" alt=""> GitHub</a><br></span>
+                        <span><a href="#"><img src="../images/twitter.png" id="logo" alt=""> Twitter</a><br></span>
+                        <span><a href="https://www.instagram.com/ii_chinmay/profilecard/?igsh=MWFpeW0xZWNwbWhnMw=="><img src="../images/insta.jpg" id="logo" alt=""> Instagram</a><br></span>
+                        
+                    </li>
+                    <li>
+                        <div class="title">Let's Collaborate</div>
+                    </li>
+                    <li>
+                        <div class="title">YouTube Channel</div>
+                        <a href="https://www.youtube.com/@CAVlogsLovesYouAlways"> <img src="../images/cavlogs.png" id="logo"> CA Vlogs</a><br>
+                        <a href="https://www.youtube.com/@SASVideos"><img src="../images/sas.png" id="logo"> SAS Videos</a>
+                    </li>
+                    <li>
+                        <div class="title">Thanks For Visiting</div>
+                    </li>
+                </ul>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>

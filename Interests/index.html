@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="page">
+        <div class="nav">
+            <div id="profile">
+                <img src="../images/me.png" alt="Profile Picture">
+                <h3>Interests <i class="fa-solid fa-heart"></i></h3>
+            </div>
+            <ul>
+                <li><a href="../Main/index.html" id="home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="../Education/index.html" id="education">Education</a></li>
+                <li><a href="../Projects/index.html" id="project">Projects</a></li>
+                <li><a href="../Resume/index.html" id="resume">Resume</a></li>
+                <li><a href="../Interests/index.html" id="interests">Interests</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h1 id="heading">Fields of <u>Interest</u></h1>
+            <div class="interests-list">
+                <div class="interest" onclick="showDetail('webDev')">
+                    <h2><i class="fa-solid fa-laptop-code"></i> Web Development </h2>
+                    <p>Explore the world of frontend and backend technologies.</p><br>
+                </div>
+                <div class="interest" onclick="showDetail('contentCreation')">
+                    <h2><i class="fa-solid fa-video"></i> YouTube Content Creation  <i class="fa-solid fa-clapperboard"></i></h2>
+                    <p>Creating engaging videos and sharing knowledge with the world.</p><br>
+                </div>
+                <div class="interest" onclick="showDetail('fitness')">
+                    <h2><i id="dumbbell"class="fa-solid fa-dumbbell"></i> Fitness and Exercise</h2>
+                    <p>Staying healthy through workouts and a balanced lifestyle.</p><br>
+                </div>
+                <div class="interest" onclick="showDetail('motorbikes')">
+                    <h2><i id="bike" class="fa-solid fa-motorcycle"></i>  Motorbikes & Travel <i class="fa-solid fa-route"></i></h2>
+                    <p>Passionate about motorcycles and dreaming of owning a Bullet bike.</p><br>
+                </div>
+                <div class="interest" onclick="showDetail('learning')">
+                    <h2><i class="fa-solid fa-glasses"></i> Continuous Learning </h2>
+                    <p>Always eager to learn new technologies and improve skills.</p>
+                </div>
+            </div>
+
+            <div id="detail" class="detail-popup" style="display: none;">
+                <span class="close" onclick="closeDetail()">&times;</span>
+                <h2 id="detail-title"></h2>
+                <p id="detail-description"></p>
+            </div>
+            <div class="bodyright">
+                <h4 id="hint">
+                    <i id="hand" class="fa-regular fa-hand-pointer"></i> Click on any interests
+                </h4>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <ul>
+                <li>
+                    <div class="title">Contact & E-mail</div>
+                    <span>+91 7903435992</span><br>
+                    <span>rabhi2461@gmail.com</span>
+                </li>
+                <li>
+                    <div class="title">Social Media Handles</div>
+                    <span><a href="https://www.linkedin.com/in/patriciaburns97753224/"><img src="../images/linkedIn.png" id="logo" alt=""> Linkedin</a><br></span>
+                    <span><a href="https://github.com/iiichinmay"><img src="../images/git.jpg" id="logo" alt=""> GitHub</a><br></span>
+                    <span><a href="#"><img src="../images/twitter.png" id="logo" alt=""> Twitter</a><br></span>
+                    <span><a href="https://www.instagram.com/ii_chinmay/profilecard/?igsh=MWFpeW0xZWNwbWhnMw=="><img src="../images/insta.jpg" id="logo" alt=""> Instagram</a><br></span>
+                </li>
+                <li>
+                    <div class="title">Let's Collaborate</div>
+                </li>
+                <li>
+                    <div class="title">YouTube Channel</div>
+                    <a href="https://www.youtube.com/@CAVlogsLovesYouAlways"> <img src="../images/cavlogs.png" id="logo"> CA Vlogs</a><br>
+                    <a href="https://www.youtube.com/@SASVideos"><img src="../images/sas.png" id="logo"> SAS Videos</a>
+                </li>
+                <li>
+                    <div class="title">Thanks For Visiting</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
